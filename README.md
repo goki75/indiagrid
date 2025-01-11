@@ -1,6 +1,3 @@
-Here's the formatted README following standard GitHub practices:
-
-```markdown
 # Indian Grid Converter
 
 A Python library for converting WGS84 latitude and longitude coordinates to the Indian Grid System and vice versa.
