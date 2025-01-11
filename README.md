@@ -38,14 +38,14 @@ print(reverse_result)
 
 ## Parameters
 
-### `WGS84_to_India`
+### `wgs84_to_igs`
 
 - **lat** (float): Latitude in decimal degrees.
 - **lon** (float): Longitude in decimal degrees.
 - **esterr** (float): Optional easting error adjustment. Default is 0.
 - **ntherr** (float): Optional northing error adjustment. Default is 0.
 
-### `India_to_WGS84`
+### `igs_to_wgs84`
 
 - **Eth** (float): Easting in the Indian grid system.
 - **Nth** (float): Northing in the Indian grid system.
@@ -55,6 +55,6 @@ print(reverse_result)
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the GPLv2 License.
 ```
 
