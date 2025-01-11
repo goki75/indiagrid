@@ -82,7 +82,7 @@ def wgs84_to_igs(lat, lon, esterr=0, ntherr=0):
     E = FE + r * math.sin(theta) + esterr
     N = FN + r0 - r * math.cos(theta) + ntherr
 
-    return {"Easting": round(E), "Northing": round(N), "Grid": InGrid}
+    return {"Easting": round(E,2), "Northing": round(N,2), "Grid": InGrid}
 
 # Converts Indian grid system coordinates back to WGS84 latitude and longitude.
 def igs_to_wgs84(Eth, Nth, grid, esterr=0, ntherr=0):
