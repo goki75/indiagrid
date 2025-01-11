@@ -19,7 +19,7 @@ pip install indiagrid
 Install via GitHub:
 ```
 pip install git+https://github.com/goki75/indiagrid.git
-
+```
 ## Usage
 
 ```python
