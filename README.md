@@ -28,12 +28,12 @@ from indiagrid import wgs84_to_igs, igs_to_wgs84
 # Convert WGS84 to Indian Grid System
 result = wgs84_to_igs(lat=28.7041, lon=77.1025)
 print(result)
-# Output: {'Easting': ..., 'Northing': ..., 'Grid': '...'}
+# Output: {'Easting': 3632281.67, 'Northing': 531791.54, 'Grid': 'I'}
 
 # Convert Indian Grid System to WGS84
-reverse_result = igs_to_wgs84(Eth=..., Nth=..., grid="I")
+reverse_result = igs_to_wgs84(3632281.67, Nth=531791.54, grid="I")
 print(reverse_result)
-# Output: {'latitude': ..., 'longitude': ...}
+# Output: {'latitude': 28.704099993002522, 'longitude': 77.10249995658076}
 ```
 
 ## Parameters
