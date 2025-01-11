@@ -13,7 +13,7 @@ setup(
     description="A Python library to convert WGS84 latitude and longitude coordinates to the Indian Grid System and vice versa.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/goki75/digipin",
+    url="https://github.com/goki75/indiagrid",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
