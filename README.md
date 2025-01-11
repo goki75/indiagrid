@@ -25,14 +25,14 @@ pip install git+https://github.com/goki75/indiagrid.git
 ```python
 from indiagrid import wgs84_to_igs, igs_to_wgs84
 ```
-## Convert WGS84 to Indian Grid System
+### Convert WGS84 to Indian Grid System
 ```python
 result = wgs84_to_igs(lat=28.7041, lon=77.1025)
 print(result)
 ```
-### Output: {'Easting': 3632281.67, 'Northing': 531791.54, 'Grid': 'I'}
+#### Output: {'Easting': 3632281.67, 'Northing': 531791.54, 'Grid': 'I'}
 
-## Convert Indian Grid System to WGS84
+### Convert Indian Grid System to WGS84
 ```python
 reverse_result = igs_to_wgs84(3632281.67, Nth=531791.54, grid="I")
 print(reverse_result)
