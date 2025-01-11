@@ -13,7 +13,7 @@ A Python library for converting WGS84 latitude and longitude coordinates to the 
 Install via pip:
 
 ```bash
-pip install indian_grid_converter
+pip install indiagrid
 ```
 
 Install via GitHub:
