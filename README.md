@@ -1,3 +1,6 @@
+Here's the formatted README following standard GitHub practices:
+
+```markdown
 # Indian Grid Converter
 
 A Python library for converting WGS84 latitude and longitude coordinates to the Indian Grid System and vice versa.
@@ -10,35 +13,51 @@ A Python library for converting WGS84 latitude and longitude coordinates to the 
 
 ## Installation
 
-Install via pip:
+You can install the package using either of the following methods:
+
+### Using pip:
 
 ```bash
 pip install indiagrid
 ```
 
-Install via GitHub:
-```
+### Installing from GitHub:
+
+```bash
 pip install git+https://github.com/goki75/indiagrid.git
 ```
+
 ## Usage
 
+### Converting WGS84 to Indian Grid System
+
 ```python
-from indiagrid import wgs84_to_igs, igs_to_wgs84
-```
-Convert WGS84 to Indian Grid System
-```python
+from indiagrid import wgs84_to_igs
+
 result = wgs84_to_igs(lat=28.7041, lon=77.1025)
 print(result)
 ```
-Output: {'Easting': 3632281.67, 'Northing': 531791.54, 'Grid': 'I'}
 
-Convert Indian Grid System to WGS84
+**Output**:
+
 ```python
+{'Easting': 3632281.67, 'Northing': 531791.54, 'Grid': 'I'}
+```
+
+### Converting Indian Grid System to WGS84
+
+```python
+from indiagrid import igs_to_wgs84
+
 reverse_result = igs_to_wgs84(3632281.67, Nth=531791.54, grid="I")
 print(reverse_result)
 ```
-Output: {'latitude': 28.704099993002522, 'longitude': 77.10249995658076}
 
+**Output**:
+
+```python
+{'latitude': 28.704099993002522, 'longitude': 77.10249995658076}
+```
 
 ## Parameters
 
@@ -46,19 +65,17 @@ Output: {'latitude': 28.704099993002522, 'longitude': 77.10249995658076}
 
 - **lat** (float): Latitude in decimal degrees.
 - **lon** (float): Longitude in decimal degrees.
-- **esterr** (float): Optional easting error adjustment. Default is 0.
-- **ntherr** (float): Optional northing error adjustment. Default is 0.
+- **esterr** (float, optional): Easting error adjustment. Default is 0.
+- **ntherr** (float, optional): Northing error adjustment. Default is 0.
 
 ### `igs_to_wgs84`
 
 - **Eth** (float): Easting in the Indian grid system.
 - **Nth** (float): Northing in the Indian grid system.
 - **grid** (str): Grid region (e.g., 'I', 'IIA', etc.).
-- **esterr** (float): Optional easting error adjustment. Default is 0.
-- **ntherr** (float): Optional northing error adjustment. Default is 0.
+- **esterr** (float, optional): Easting error adjustment. Default is 0.
+- **ntherr** (float, optional): Northing error adjustment. Default is 0.
 
 ## License
 
-This project is licensed under the GPLv2 License.
-```
-
+This project is licensed under the **GPLv2 License**.
